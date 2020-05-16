@@ -1,0 +1,288 @@
+@media (max-width: 800px) {
+  #main-header {
+    //fix header bar for tablet size
+    &-content {
+      margin-top: 20%;
+
+      .login {
+        input {
+          width: 40%;
+        }
+      }
+    }
+
+    &-inside {
+      //fix height from the inside header bar
+      height: 12rem;
+    }
+  }
+  #navbar {
+    //fix how the items are presented in the navbar
+    flex-direction: column;
+    padding: 1rem;
+
+    .logo {
+      margin-bottom: 1rem;
+    }
+
+    .nav-list {
+      a {
+        padding: 0.1rem;
+      }
+    }
+  }
+
+  #about {
+    //fix style of grid in the about article
+    .about-content {
+      grid-template-areas:
+        "picture1 picture2"
+        "text text";
+    }
+  }
+
+  #news {
+    //fix all the complex grid structure and make it simple and responsive
+    h1 {
+      line-height: 1;
+    }
+    .bottom-line {
+      margin-top: 0.6rem;
+      margin-bottom: 1rem;
+    }
+
+    .news-grid {
+      grid-template-columns: repeat(2, 1fr);
+
+      .news {
+        &-a {
+          grid-column: auto;
+          grid-template-columns: 1fr;
+          gap: 0.5rem;
+
+          .news-text {
+            grid-column: auto;
+          }
+        }
+
+        &-b {
+          display: flex;
+          flex-direction: column;
+
+          p {
+            margin-bottom: 1rem;
+          }
+
+          .image {
+            order: 2;
+            margin-top: 2rem;
+          }
+
+          .news-text {
+            order: 1;
+          }
+        }
+
+        &-e {
+          grid-column: auto;
+          grid-template-columns: 1fr;
+          gap: 0.5rem;
+
+          .image {
+            grid-column: auto;
+            grid-row: auto;
+            margin: auto;
+          }
+          .news-text {
+            grid-column: auto;
+            grid-row: auto;
+          }
+        }
+
+        &-f {
+          grid-column: auto;
+          grid-row: auto;
+        }
+
+        &-g {
+          grid-column: auto;
+          grid-template-columns: 1fr;
+          .image {
+            grid-column: auto;
+            grid-row: auto;
+            margin: auto;
+          }
+          .news-text {
+            grid-column: auto;
+            grid-row: auto;
+          }
+        }
+      }
+    }
+  }
+
+  #article-page {
+    .news-page {
+      grid-template-columns: 1fr 1fr;
+
+      .main-article {
+        grid-column: 1 / span 2;
+      }
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  #main-header {
+    //fix the header navbar for mobile
+    .logo {
+      display: none;
+    }
+
+    .nav-list {
+      a {
+        margin-right: 1.2rem;
+      }
+    }
+
+    &-content {
+      .login {
+        input {
+          width: 80%;
+        }
+      }
+    }
+
+    &-inside {
+      height: 7.5rem;
+      .logo {
+        display: none;
+      }
+
+      .nav-list {
+        a {
+          margin-right: 1.2rem;
+        }
+      }
+    }
+  }
+
+  #about {
+    .about-content {
+      //stack items from the article in the about page
+      grid-template-areas:
+        "picture1 picture1"
+        "text text";
+      .picture:nth-child(2) {
+        display: none;
+      }
+    }
+  }
+
+  #awards {
+    //stack awards in the about page
+    .awards-container {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  #news {
+    //stack news grid and reorder components
+    .news-grid {
+      grid-template-columns: 1fr;
+
+      .news {
+        &-b {
+          .image {
+            margin-top: 0;
+          }
+          .news-text {
+            order: 2;
+          }
+        }
+
+        &-c {
+          .image {
+            order: 1;
+          }
+          .news-text {
+            order: 2;
+          }
+        }
+
+        &-f {
+          .image {
+            margin-top: 0;
+            order: 1;
+          }
+          .news-text {
+            order: 2;
+          }
+        }
+      }
+    }
+  }
+
+  #stats {
+    //fix stats style on mobile
+    .stats-container {
+      border: none;
+      padding: 0.2rem 0.2rem 1rem 0.2rem;
+    }
+  }
+
+  #talents {
+    //fix talents section on news page
+    flex-direction: column;
+    .side-a {
+      display: none;
+    }
+    .side-b {
+      max-width: 100%;
+    }
+  }
+
+  #article-page {
+    //remove side news grid articles from display
+    .news-page {
+      .column-two {
+        display: none;
+      }
+    }
+  }
+
+  #troubleshooting {
+    .help-form {
+      form {
+        grid-template-columns: 1fr;
+
+        div:nth-of-type(4) {
+          grid-column: auto;
+          grid-row: 4;
+        }
+
+        div:last-child {
+          grid-row: 5;
+          grid-column: auto;
+        }
+      }
+    }
+  }
+
+  #main-footer {
+    div:last-child {
+      grid-column: auto;
+
+      .footer-info {
+        flex-direction: column;
+
+        p {
+          margin-bottom: 1rem;
+        }
+      }
+    }
+    .container {
+      grid-template-columns: 1fr;
+    }
+  }
+}

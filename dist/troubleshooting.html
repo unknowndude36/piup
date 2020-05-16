@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/2cf8748876.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&family=Source+Sans+Pro:ital,wght@0,700;1,400&family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Log-in | Piup Employee Portal</title>
+  </head>
+  <body>
+    <!--Header ------------>
+
+    <header id="main-header-inside">
+      <div class="header-image"></div>
+      <div class="container">
+        <nav id="navbar">
+          <div class="logo">
+            <a href="index.html" class="logo-link">
+              <h1>
+                <span class="text-primary logo-font">piup</span>
+                <i class="fas fa-tractor"></i>
+              </h1>
+            </a>
+          </div>
+
+          <ul class="nav-list">
+            <li><a href="index.html">Login</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="news.html">News</a></li>
+            <li><a href="troubleshooting.html" class="current">Help</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!--Section 1 - Troubleshooting Form-->
+
+    <section id="troubleshooting" class="bg-light py-3">
+      <div class="container">
+        <h1 class="l-heading text-center">
+          Help & <span class="text-primary">Support</span>
+        </h1>
+        <div class="bottom-line"></div>
+        <p class="text-center">
+          If you are experiencing any problems with our page, can't login or
+          forgot your password, send us your problem and the IT team will
+          contact you as soon as possible to assist you.
+        </p>
+        <div class="help-form">
+          <form>
+            <div>
+              <label for="name">Name</label>
+              <input
+                type="text"
+                name="name"
+                placeholder="Your Name Here"
+                required
+              />
+            </div>
+
+            <div>
+              <label for="email">Piup Email</label>
+              <input
+                type="email"
+                name="email"
+                placeholder="example@piup.com"
+                required
+              />
+            </div>
+
+            <div>
+              <label for="subject">Subject(Problem you are having)</label>
+              <input
+                type="text"
+                name="subject"
+                placeholder="Subject"
+                required
+              />
+            </div>
+
+            <div>
+              <label for="message">Message</label>
+              <textarea
+                name="message"
+                placeholder="Describe your problem"
+              ></textarea>
+            </div>
+
+            <div>
+              <button type="submit" class="btn-primary btn-big">
+                Send Message
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!--Main Footer ------------>
+
+    <footer id="main-footer" class="bg-dark py-2">
+      <div class="container">
+        <div>
+          <div class="logo">
+            <a href="index.html" class="logo-link">
+              <h1>
+                <span class="text-primary logo-font">piup</span>
+                <i class="fas fa-tractor"></i>
+              </h1>
+            </a>
+          </div>
+          <p>
+            We are a farm that always focus on sustainability and improving
+            results for production and clients. Here at piup&copy;, you are our
+            most valuable resource for archieving our goals, and we look foward
+            for always doing you the best, as you do your best for our clients!
+            =D
+          </p>
+        </div>
+
+        <div>
+          <h3>Facing problems with the website?</h3>
+          <p>
+            If you have suggestions or found a bug, please report it to your
+            supervisor as soon as possible.
+          </p>
+          <p>
+            On the other hand, if you can't log in, forgot your password or want
+            any kind of troubleshooting, please report it at
+            <a href="troubleshooting.html">THIS PAGE</a> and we will manage to
+            fix it as fast as we can.
+          </p>
+          <a href="troubleshooting.html" class="btn-secondary"
+            >Help & Support</a
+          >
+        </div>
+
+        <div>
+          <h3>Useful Links</h3>
+          <ul>
+            <li><a href="troubleshooting.html">Help & Support</a></li>
+            <li><a href="about.html#our-mission">Our Mission</a></li>
+            <li><a href="news.html#stats">Our Farm Stats</a></li>
+            <li><a href="news.html">Relevant News</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <div class="footer-info">
+            <div>
+              <p>Copyright &copy;Piup 2020, All Rights Reserved.</p>
+            </div>
+
+            <div class="social">
+              <div class="social-icon">
+                <a href="https://www.twitter.com"
+                  ><i class="fab fa-twitter"></i
+                ></a>
+              </div>
+
+              <div class="social-icon">
+                <a href="https://www.facebook.com"
+                  ><i class="fab fa-facebook"></i
+                ></a>
+              </div>
+
+              <div class="social-icon">
+                <a href="https://www.instagram.com"
+                  ><i class="fab fa-instagram"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,248 @@
+$primaryColor: #53c43b;
+$secondaryColor: #e7e247;
+$lightColor: #fbfbff;
+$mediumColor: #eef4d4;
+$darkColor: #231f20;
+
+$mainFont: "Source Sans Pro", sans-serif;
+$secondaryFont: "Comfortaa", cursive;
+$paragraphFont: "Roboto", sans-serif;
+
+$websiteWidth: 1100px;
+
+//Global Styles
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $mainFont;
+  line-height: 1.4;
+  background-color: $lightColor;
+}
+
+h2,
+h3,
+h4 {
+  text-transform: uppercase;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+p {
+  margin-bottom: 0.5rem;
+  font-family: $paragraphFont !important;
+  text-align: justify;
+}
+
+//container
+.container {
+  max-width: $websiteWidth;
+  width: 92%;
+  padding: 0 1rem;
+  margin: auto;
+  overflow: hidden;
+}
+
+//current page
+
+.current {
+  border-bottom: 3px solid $primaryColor !important;
+}
+
+//button properties
+
+%btn-shared {
+  display: inline-block;
+  transition: all 1s;
+  border: none;
+  text-align: center;
+  padding: 0.5rem 0.8rem;
+  font-weight: bold;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.btn {
+  &-dark {
+    @extend %btn-shared;
+    background: $darkColor;
+    color: $lightColor;
+
+    &:hover {
+      background: #0c0b0b;
+    }
+  }
+  &-primary {
+    @extend %btn-shared;
+    background: $primaryColor;
+    color: $lightColor;
+
+    &:hover {
+      background: hsl(109, 54%, 40%);
+    }
+  }
+  &-light {
+    @extend %btn-shared;
+    background: $lightColor;
+    color: $darkColor;
+  }
+  &-secondary {
+    @extend %btn-shared;
+    background: $secondaryColor;
+    color: $darkColor;
+
+    &:hover {
+      background: hsl(58, 77%, 70%);
+    }
+  }
+}
+
+.btn-big {
+  width: 14rem;
+  height: 5rem;
+  font-size: 1rem;
+}
+
+//styling blocks
+
+.bottom-line {
+  width: 4rem;
+  height: 3px;
+  background: $primaryColor;
+  display: block;
+  margin: 0 auto 1rem auto;
+}
+
+//text properties
+
+.text-primary {
+  color: $primaryColor;
+}
+
+.text-dark {
+  color: $darkColor;
+}
+
+.logo-font {
+  font-family: $secondaryFont;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.l-heading {
+  font-size: 4rem;
+}
+
+.white-text {
+  color: #fff;
+}
+
+.text-medium {
+  color: $mediumColor;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.text-bold {
+  font-weight: bold;
+}
+
+//background
+
+.bg-primary {
+  background: $primaryColor;
+  color: #fff;
+}
+
+.bg-secondary {
+  background: $secondaryColor;
+  color: #000;
+}
+
+.bg-light {
+  background: $lightColor;
+  color: #000;
+}
+
+.bg-white {
+  background: #fff;
+  color: #000;
+}
+
+.bg-medium {
+  background: $mediumColor;
+  color: #000;
+}
+
+.bg-dark {
+  background: $darkColor;
+  color: #fff;
+}
+
+//Padding and Margin
+
+.p-1 {
+  padding: 1rem;
+}
+.p-2 {
+  padding: 2rem;
+}
+.p-3 {
+  padding: 3rem;
+}
+.p-4 {
+  padding: 3.5rem;
+}
+
+.py-1 {
+  padding: 1rem 0;
+}
+.py-2 {
+  padding: 2rem 0;
+}
+.py-3 {
+  padding: 3rem 0;
+}
+.py-4 {
+  padding: 3.5rem 0;
+}
+
+.m-1 {
+  margin: 1rem;
+}
+.m-2 {
+  margin: 2rem;
+}
+.m-3 {
+  margin: 3rem;
+}
+.m-4 {
+  margin: 3.5rem;
+}
+
+.my-1 {
+  margin: 1rem 0;
+}
+.my-2 {
+  margin: 2rem 0;
+}
+.my-3 {
+  margin: 3rem 0;
+}
+.my-4 {
+  margin: 3.5rem 0;
+}
